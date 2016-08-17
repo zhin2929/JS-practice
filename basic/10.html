@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>basic--------10.js</title>
+</head>
+<body>
+  <label for="">第一个数：</label>
+  <input type="text" id="first"> <br>
+  <label for="">第二个数：</label>
+  <input type="text" id="second"> <br>
+  <button id="btn1" name="button">乘</button>
+  <button id="btn2" name="button">除</button> <br>
+  等于：<span id="result"></span>
+
+  <script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    btn1.onclick = function () {
+      first = document.getElementById("first").value;
+      second = document.getElementById("second").value;
+      document.getElementById("result").innerHTML = first * second;
+    }
+    btn2.onclick = function () {
+      first = document.getElementById("first").value;
+      second = document.getElementById("second").value;
+      document.getElementById("result").innerHTML = first / second;
+    }
+  </script>
+</body>
+</html>
